@@ -1,0 +1,19 @@
+<div>
+  <div style="margin-left:40px;" class="review"  ng-repeat="rev in pet.reviews | orderBy:'-like'">
+    <div style="margin-bottom:0px;">
+      <strong ng-click="review.upLike(rev)">UP</strong>   {{rev.like}}//{{rev.review}}
+
+    </div>
+
+  </div >
+
+  <div style="margin-left:40px;" ng-show="{{review.reviewContent.review}}">
+    {{review.reviewContent.review}}
+  </div>
+  <div >
+    <form ng-submit="review.update(pet)" style="margin-left:40px;">
+      <input style='width:225px;' type="text" ng-model="review.reviewContent.review" id="textInput">
+      <input type="submit" name="go" value="go">
+    </form>
+  </div>
+</div>

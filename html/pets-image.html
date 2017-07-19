@@ -1,0 +1,14 @@
+
+<div class="images" >
+  <ul class="img-thumbnails clearfix">
+    <div class="mainImage">
+      <img style='width:270px; height:270px;' ng-src="{{pet.images[img.current]}}" >
+      <!-- <img style='width:270px; height:270px;' ng-src="{{pet.images[img.current]}}" > -->
+    <pets-description></pets-description>
+    </div>
+    <li class="small-image pull-left thumbnail" ng-repeat="image in pet.images" >
+      <!-- <img style='width:80px; height:80px;'ng-src="{{image}}" ng-click="img.clickIt(pet)"/> -->
+      <img style='width:80px; height:80px;'ng-src="{{image}}" ng-click="img.clicked(image)"/>
+    </li>
+  </ul>
+</div>

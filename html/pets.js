@@ -8,7 +8,6 @@
       controller:function(){
         this.current = 0;
 
-
         this.clicked = function(image){
           var num = image.slice(-5,-4);
           num = num > 3 ? image.slice(-5,-4) - 4 : image.slice(-5,-4) -1;

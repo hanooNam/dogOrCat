@@ -11,7 +11,10 @@
       "images/dog-02.gif",
       "images/dog-03.gif"
     ],
-    "reviews": []
+    "reviews": [
+      {"review":"넘나 좋은것", "like":1},
+      {"review":"넘나 이뿌네용", "like":3}
+    ]
   },
   {
     "name": "공이",
@@ -25,7 +28,10 @@
       "/images/dog-05.gif",
       "/images/dog-06.gif"
     ],
-    "reviews": []
+    "reviews": [
+      {"review":"넘나 좋은것", "like":1},
+      {"review":"넘나 이뿌네용", "like":3}
+    ]
   },
   {
     "name": "당근",
@@ -39,7 +45,10 @@
       "/images/cat-02.gif",
       "/images/cat-03.gif"
     ],
-    "reviews": []
+    "reviews": [
+      {"review":"넘나 좋은것", "like":1},
+      {"review":"넘나 이뿌네용", "like":3}
+    ]
   },
   {
     "name": "굥이",
@@ -53,6 +62,9 @@
       "/images/cat-05.gif",
       "/images/cat-06.gif"
     ],
-    "reviews": []
+    "reviews": [
+      {"review":"넘나 좋은것", "like":1},
+      {"review":"넘나 이뿌네용", "like":3}
+    ]
   }
 ]

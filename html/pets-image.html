@@ -1,8 +1,8 @@
 
-<div class="images" >
+<div class="images"  ng-mouserover="img.sizeUp()" >
   <ul class="img-thumbnails clearfix">
     <div class="mainImage">
-      <img style='width:270px; height:270px;' ng-src="{{pet.images[img.current]}}" >
+      <img id='mainImage' style='width:270px; height:270px;' ng-src="{{pet.images[img.current]}}">
       <!-- <img style='width:270px; height:270px;' ng-src="{{pet.images[img.current]}}" > -->
     <pets-description></pets-description>
     </div>

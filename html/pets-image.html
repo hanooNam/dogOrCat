@@ -1,9 +1,10 @@
 
-<div class="images"  ng-mouserover="img.sizeUp()" >
+<div class="images"  ng-mouserover="img.firstImage(pet)" >
   <ul class="img-thumbnails clearfix">
     <div class="mainImage">
-      <img id='mainImage' style='width:270px; height:270px;' ng-src="{{pet.images[img.current]}}">
-      <!-- <img style='width:270px; height:270px;' ng-src="{{pet.images[img.current]}}" > -->
+      
+      <img id='mainImage' style='width:270px; height:270px;' ng-src="{{img.current || pet.images[0]}}">
+            <!-- <img style='width:270px; height:270px;' ng-src="{{pet.images[img.current]}}" > -->
     <pets-description></pets-description>
     </div>
     <li class="small-image pull-left thumbnail" ng-repeat="image in pet.images" >

@@ -4,23 +4,48 @@
     <meta charset="utf-8">
     <title>dog or cat</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body ng-controller="PetsController as pets">
-
+    <header id="heading">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <b>cat</b>? or <b>dog</b>?
+          <h6 id='top'> impossible to choose</h6>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </header>
     <!-- cat? <input type="checkbox" id="cat" value="cat" checked='true'>
     dog? <input type="checkbox" id="dog" value="dog" checked='true'> -->
-    <div id='show' ng-repeat="pet in pets.perDatas " style='width:400px;'>
-      <pets-basic></pets-basic>
-      <pets-image></pets-image>
-      <!-- <reviews></reviews> -->
-      <pets-review></<pets-review>
+    <!-- <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
 
-    </div>
-
+      </div>
+      <div class="col-md-4"></div>
+    </div> -->
+    <article class="article">
+      <div id='show' ng-repeat="pet in pets.perDatas " style='width:350px;'>
+        <pets-basic></pets-basic>
+        <pets-image></pets-image>
+        <pets-review></<pets-review>
+      </div>
+    </article>
+    <footer>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <a href="#top">top</a>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </footerr>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="app.js"></script>
     <script src="pets.js"></script>

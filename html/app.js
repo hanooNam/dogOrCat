@@ -78,9 +78,10 @@
   app.controller('PetsController', ['$http', function($http){
     var animals = this;
     // 왜 그냥 this.petDatas를 하면 안될까요?
+    // 결국에보면 animal은 this 대신에 쓰인것 밖에 없는데 진짜 순수하게 ㄹㅇ
     animals.perDatas = [];
 
-    $http.get("/pets.json").success(function(data){
+    $http.get("pets.json").success(function(data){
       animals.perDatas = data;
     });
   }]);

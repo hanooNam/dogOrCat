@@ -15,10 +15,9 @@
         // //     return this.current = image;
         // //   }
         // // };
-        // this.basic = function(pet){
-        //   console.log(pet);
-        //   return this.current = pet.images[0];
-        // };
+        this.basic = function(pet){
+          return this.current = pet.images[Math.floor(Math.random()*2)];
+        };
         // 이렇게나 쓸모없는 코드가 많았음 ㅎ
         this.clicked = function(image){
           // var num = image.slice(-5,-4);
